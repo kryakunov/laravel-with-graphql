@@ -10,8 +10,10 @@
 
 1. docker-compose up -d
 2. composer i
-2. php artisan migrate
-3. php artisan db:seed
+3. cp .env.example .env
+4. php artisan key:generate
+5. php artisan migrate
+6. php artisan db:seed
 
 Далее можно использовать Postman и отправлять запросы на http://localhost:8080/graphql
 
